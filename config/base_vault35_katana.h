@@ -80,4 +80,49 @@
             bindings = <&kp LC(BSPC)>;
         };
     };
+
+/ {
+    behaviors {
+        hl: homerow_mods_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "homerow mods left";
+            #binding-cells = <2>;
+            // flavor = "tap-preferred";
+            flavor = "balanced";
+            tapping-term-ms = <170>;
+            quick-tap-ms = <100>;
+            // global-quick-tap;
+            bindings = <&kp>, <&kp>;
+            // opposite side hand keys
+            hold-trigger-key-positions = <5 6 7 8 9 15 16 17 18 19 25 26 27 28 29 30 32 33>;
+        };
+        hr: homerow_mods_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "homerow mods right";
+            #binding-cells = <2>;
+            // flavor = "tap-preferred";
+            flavor = "balanced";
+            tapping-term-ms = <170>;
+            quick-tap-ms = <100>;
+            // global-quick-tap;
+            bindings = <&kp>, <&kp>;
+            // opposite side hand keys
+            hold-trigger-key-positions = <0 1 2 3 4 10 11 12 13 14 20 21 22 23 24 30 32 33>;
+        };
+
+        my_lt: my_layer_taps {
+            compatible = "zmk,behavior-hold-tap";
+            label = "my layer taps";
+            #binding-cells = <2>;
+            // flavor = "tap-preferred";
+            flavor = "balanced";
+            tapping-term-ms = <170>;
+            quick-tap-ms = <100>;
+            // global-quick-tap;
+            bindings = <&mo &kp>, <&kp>;
+            // non-thumb keys
+            hold-trigger-key-positions = <0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29>;
+        };
+    };
+
 };
