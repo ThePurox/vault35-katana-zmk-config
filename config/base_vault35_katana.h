@@ -80,6 +80,7 @@
             bindings = <&kp LC(BSPC)>;
         };
     };
+};
 
 / {
     behaviors {
