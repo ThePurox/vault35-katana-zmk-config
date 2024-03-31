@@ -52,17 +52,17 @@
             key-positions = <8 18>;
             bindings = <&kp DE_RBRC>;
         };
-        /* caps */
-        combo_caps-word {
-            timeout-ms = <40>;
-            key-positions = <13 16>;
-            bindings = <&caps_word>;
-        };
-        combo_capslock {
-            timeout-ms = <40>;
-            key-positions = <3 6>;
-            bindings = <&kp CAPSLOCK>;
-        };
+        /* /\* caps *\/ */
+        /* combo_caps-word { */
+        /*     timeout-ms = <40>; */
+        /*     key-positions = <13 16>; */
+        /*     bindings = <&caps_word>; */
+        /* }; */
+        /* combo_capslock { */
+        /*     timeout-ms = <40>; */
+        /*     key-positions = <3 6>; */
+        /*     bindings = <&kp CAPSLOCK>; */
+        /* }; */
         /* deletion */
         combo_bspc {
             timeout-ms = <40>;
