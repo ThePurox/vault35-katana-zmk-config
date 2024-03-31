@@ -10,7 +10,7 @@
 / {
     combos {
         compatible = "zmk,combos";
-/\* parentheticals *\/
+        /* parentheticals */
         combo_lbrc {
             timeout-ms = <40>;
             key-positions = <1 11>;
@@ -51,7 +51,7 @@
             key-positions = <8 18>;
             bindings = <&kp DE_RBRC>;
         };
-/\* caps *\/
+        /* caps */
         combo_caps-word {
             timeout-ms = <40>;
             key-positions = <13 16>;
@@ -62,7 +62,7 @@
             key-positions = <3 6>;
             bindings = <&kp CAPSLOCK>;
         };
-/\* deletion *\/
+        /* deletion */
         combo_bspc {
             timeout-ms = <40>;
             key-positions = <6 7>;
