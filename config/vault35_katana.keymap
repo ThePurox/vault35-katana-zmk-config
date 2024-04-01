@@ -13,11 +13,11 @@
         kneir_layer {
             label = "Base";
             bindings = <
-       &kp DE_Y      &kp L        &kp G        &kp D          &kp P         &kp J         &kp F         &kp O        &kp U       &hr RCTRL R
-       &hl LCTRL A   &hl LALT S   &hl LGUI T   &hl LSHFT H    &hl RALT B    &hr RALT K    &hr RSHFT N   &hr RGUI E   &hr LALT I  &none
-       &kp Q         &kp W        &kp C        &kp V          &kp X         &kp DE_Z      &kp M         &kp DE_COMMA &kp DE_DOT  &kp DE_MINUS
-                     // &trans       &my_lt MED ESC  &my_lt NAV SPACE &none &my_lt SYM ENTER &none   &my_lt NUM TAB &trans
-                     &kp N1       &kp N2  &kp N3 &kp N4 &kp N5 &kp N6   &kp N7 &kp N8
+       &kp DE_Y      &kp L        &kp G        &kp D          &kp P              &kp J         &kp F         &kp O        &kp U       &hr RCTRL R
+       &hl LCTRL A   &hl LALT S   &hl LGUI T   &hl LSHFT H    &hl RALT B         &hr RALT K    &hr RSHFT N   &hr RGUI E   &hr LALT I  &none
+       &kp Q         &kp W        &kp C        &kp V          &kp X      &none   &kp DE_Z      &kp M         &kp DE_COMMA &kp DE_DOT  &kp DE_MINUS
+                     &trans       &my_lt MED ESC  &my_lt NAV SPACE &none &my_lt SYM ENTER &none   &my_lt NUM TAB &trans
+                     // &kp N1       &kp N2  &kp N3 &kp N4 &kp N5 &kp N6   &kp N7 &kp N8
             >;
 		sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
@@ -25,10 +25,10 @@
         nav_layer {
             label = "Nav";
             bindings = <
-       &trans     &trans     &kp UARW    &trans          &trans       &trans           &trans         &trans      &trans     &trans
-       &trans     &kp LARW   &kp DARW    &kp RARW        &trans       &kp LARW         &kp DARW       &kp UARW    &kp RARW   &trans
-       &trans     &trans     &trans      &trans          &trans       &kp HOME         &kp PG_DN      &kp PG_UP   &kp END    &trans
-                  &trans     &trans      &trans          &none        &trans           &none          &trans      &trans
+       &trans     &trans     &kp UARW    &trans          &trans           &trans           &trans         &trans      &trans     &trans
+       &trans     &kp LARW   &kp DARW    &kp RARW        &trans           &kp LARW         &kp DARW       &kp UARW    &kp RARW   &trans
+       &trans     &trans     &trans      &trans          &trans   &none   &kp HOME         &kp PG_DN      &kp PG_UP   &kp END    &trans
+                  &trans     &trans      &trans          &none            &trans           &none          &trans      &trans
             >;
 		sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
@@ -36,10 +36,10 @@
         num_layer {
             label = "Num";
             bindings = <
-       &kp F1     &kp F2     &kp F3      &kp F4          &trans       &kp DE_PLUS   &kp N1         &kp N2      &kp N3     &kp DOT
-       &kp F5     &kp F6     &kp F7      &kp F8          &trans       &kp N0        &kp N4         &kp N5      &kp N6     &none
-       &kp F9     &kp F10    &kp F11     &kp F12         &trans       &kp DE_ASTRK  &kp N7         &kp N8      &kp N9     &kp DE_SLASH
-                  &trans     &trans      &trans          &none        &trans           &none          &trans      &trans
+       &kp F1     &kp F2     &kp F3      &kp F4          &trans           &kp DE_PLUS   &kp N1         &kp N2      &kp N3     &kp DOT
+       &kp F5     &kp F6     &kp F7      &kp F8          &trans           &kp N0        &kp N4         &kp N5      &kp N6     &none
+       &kp F9     &kp F10    &kp F11     &kp F12         &trans   &none   &kp DE_ASTRK  &kp N7         &kp N8      &kp N9     &kp DE_SLASH
+                  &trans     &trans      &trans          &none            &trans           &none          &trans      &trans
             >;
 		sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
@@ -49,7 +49,7 @@
             bindings = <
        &trans         &kp DE_GRAVE   &kp DE_ACUTE   &kp RA(LS(SEMI)) &kp LBRC       &kp DE_EXCL     &kp DE_APOS    &kp DE_DQT     &kp DE_CARET   &kp DE_FSLH
        &kp DE_BSLH    &kp DE_AT      &kp DE_HASH    &kp DOLLAR       &kp LPAR       &kp DE_EQUAL    &kp DE_PLUS    &kp DE_MINUS   &kp DE_STAR    &none
-       &trans         &kp TILDE      &kp DE_SQT     &kp UNDERSCORE   &trans         &kp DE_QMARK    &kp DE_LT      &kp DE_GT      &kp DE_PIPE    &kp DE_TILDE
+       &trans         &kp TILDE      &kp DE_SQT     &kp UNDERSCORE   &trans  &none  &kp DE_QMARK    &kp DE_LT      &kp DE_GT      &kp DE_PIPE    &kp DE_TILDE
                       &trans         &trans         &trans           &none          &trans          &none          &trans      &trans
             >;
 		sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
